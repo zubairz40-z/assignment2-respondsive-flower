@@ -31,16 +31,12 @@
 
 
 /*Navbar styless*/
-nav{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    gap: 590px;
-    margin: auto 150px;
-    margin-top: 30px;
-    
-    
-   
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 150px;
+  margin-top: 30px;
 }
 .nav-image{
     max-width: 135px;
@@ -55,4 +51,38 @@ nav ul{
 nav ul li{
     list-style: none;
     
+}
+
+/*Banner styless*/
+.banner{
+    max-width: 1140px;
+    height: 4610x;
+    display: flex;
+    margin: auto;
+    margin-top: 221px;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.banner-title{
+    font-size: 4.063rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.banner-desc{
+    font-size: 1.375rem;
+    font-weight:400;
+    padding: 0;
+}
+.banner-content, .banner-image {
+  flex: 1;}
+
+.banner-content{
+    
+}
+.banner-image{
+    max-width: 570px;
+
+
 }
