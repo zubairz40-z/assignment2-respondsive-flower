@@ -86,3 +86,80 @@ nav ul li{
 
 
 }
+
+/*Plants Section*/
+.plants{
+    max-width: 1140px;
+    margin: auto 150px;
+}
+.plants-content{
+   
+    justify-content: center;
+    text-align: center;
+}
+.plants-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 16px;
+}
+.plants-desc{
+    justify-content: center;
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: normal;
+    padding: 0;
+}
+.plants-container{
+  border: 1px solid transparent;
+  max-width: 270px;
+  height: 484px;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+}
+.plant-name{
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.plant-price{
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
+}
+.btn-primary{
+    background-color: #E95A08;
+    padding: 19px 80px;
+    margin: 0;
+    margin-top: 10px;
+   width: 270px;
+   color: white;
+   border: transparent;
+   
+}
+.plants-container-box
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: #dda07c;
+}
+
+.plants-container:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: antiquewhite;
+
+
+}
