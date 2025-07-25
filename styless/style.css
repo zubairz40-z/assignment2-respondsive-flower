@@ -1,4 +1,9 @@
 /*fonts shared*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -251,6 +256,7 @@ nav ul li{
     align-items: center;
     margin: auto 150px;
     text-align: center;
+    margin-bottom: 120px;
 
 }
 .deals-photos-cards{
@@ -314,6 +320,56 @@ nav ul li{
   justify-content: center;
   align-items: center;
 }
+
+/*Colorful Bunch*/
+.colorfull-bunch{
+    background-image: url(/assets/news-letter-bg.png);
+     background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100% ;
+    height: 535px;
+    display: flex
+    ;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.bunch-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.bunch-bar{
+    display: flex;
+     height: 50px;
+     justify-content: center;
+    
+}
+.bar{
+    width: 645px;
+   padding-left: 20px;
+}
+.btn-2{
+    background-color: #E95A08;
+    max-width: 186px;
+
+    padding: 19px 53.5px;
+    margin: 0;
+    color: white;
+    border: transparent;
+
+}
+.btn-2:hover{
+    cursor: pointer;
+    background-color: #dda07c;
+}
+
+
 @media screen and (max-width: 1024px) {
   .trustedbadge {
     display: none;
