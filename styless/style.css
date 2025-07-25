@@ -1,0 +1,58 @@
+/*fonts shared*/
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.noto-font{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/*shared styles*/
+.text-black1{
+  color: #000000;
+}
+.text-ash1{
+    color: #8987A1;
+}
+.text-orange{
+    color: #E95A08;
+}
+.main-colour{
+    background-color: #ebebeb;
+}
+
+
+/*Navbar styless*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 590px;
+    margin: auto 150px;
+    margin-top: 30px;
+    
+    
+   
+}
+.nav-image{
+    max-width: 135px;
+    height: 82px;
+}
+nav ul{
+    display: flex;
+     gap: 48px;
+
+
+}
+nav ul li{
+    list-style: none;
+    
+}
