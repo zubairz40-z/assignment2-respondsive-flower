@@ -418,8 +418,241 @@ nav ul li{
   margin-top: 0;
   padding-top: 0; 
 }
-@media screen and (max-width: 1024px) {
+
+/* Media Responsive Section */
+@media screen and (max-width: 576px) {
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Navbar Styles */
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 16px;
+    padding: 0;
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav-image {
+    max-width: 100px;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: none; 
+    font-size: 14px;
+  }
+
+  nav ul li:last-child {
+    display: block; /* Show only the Cart */
+    font-size: 14px;
+    margin-right: 35px;
+   
+  }
+
+  /* Banner Section */
+  .banner {
+    flex-direction: column-reverse;
+    margin: 20px 16px;
+    gap: 16px;
+    height: auto;
+    width: auto;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .banner-desc {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+    line-height: 1.4;
+  }
+
+  .banner-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /*plants section*/
+.plants {
+    margin: 0 16px;
+    margin-bottom: 42px;
+  }
+
+  .plants-content {
+    max-width: 100%;
+    padding: 0 16px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .plants-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .plants-desc {
+    font-size: 0.875rem;
+    font-weight: normal;
+    max-width: 100%;
+    height: auto; /* ✅ Don't fix height */
+    padding: 0;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+
+  .plants-container-box {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin:  0 10px;
+  }
+
+  .plants-container {
+    max-width: 100%;
+    height: auto;
+    margin: auto 14px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 12px 0;
+  }
+.trusted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 320px; 
+  width: 100%;       
+  margin: 0 auto;
+  padding: 10px 15px;
+  text-align: center;
+  margin-bottom: 0;
+      margin: 60px auto 40px; /* Reduced top/bottom margins */
+    padding: 0 16px;
+    max-width: 100%;
+}
+
+.trusted-left,
+.trusted-right {
+  max-width: 320px;
+  width: 100%;
+  margin-left: 30px;
+  padding: 0;
+}
+
+.trusted-title {
+  font-size: 1.5rem; 
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.trusted-title br {
+  display: none;
+}
+
+.trusted-desc {
+  font-size: 0.875rem; 
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  list-style-position: inside; 
+}
+
+.trusted-desc li {
+  font-size: inherit;
+  margin-bottom: 8px; 
+}
+.latest-deals {
+    margin: 0 auto;
+    padding: 0 16px 40px;
+    width: 100%;
+  }
+
+  .deals-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .deals-desc {
+    font-size: 0.875rem;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .total-cards-photos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .deals-photos-cards {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 361px;
+  }
+
+  .deals-cards,
+  .deals-cards2,
+  .deals-cards-right {
+    width: 100% !important;
+    max-width: 361px;
+    height: 200px; /* Consistent height for all cards */
+    margin: 0 auto;
+  }
+
+  /* Make the large card same size as others on mobile */
+  .deals-cards-right {
+    width: 100% !important;
+    max-width: 361px;
+    height: 200px;
+  }
+
+
+}
+  @media screen and (max-width: 1024px) {
   .trustedbadge {
     display: none;
   }
+ 
 }
+
