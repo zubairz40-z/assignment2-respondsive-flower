@@ -118,6 +118,7 @@ nav ul li{
      padding: 0 126px;
      margin: 0 auto;
 }
+
 .plants-container{
   border: 1px solid transparent;
   max-width: 270px;
@@ -502,49 +503,69 @@ nav ul li{
   }
 
   /*plants section*/
-.plants {
-    margin: 0 16px;
-    margin-bottom: 42px;
-  }
+ .plants {
+  margin: 0 auto 42px;
+  padding: 0 8px;
+}
 
-  .plants-content {
-    max-width: 100%;
-    padding: 0 16px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
+.plants-content {
+  max-width: 100%;
+  padding: 0 16px;
+  margin-bottom: 30px; /* Less gap below title */
+  text-align: center;
+}
 
-  .plants-title {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-  }
+.plants-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
 
-  .plants-desc {
-    font-size: 0.875rem;
-    font-weight: normal;
-    max-width: 100%;
-    height: auto; /* ✅ Don't fix height */
-    padding: 0;
-    margin: 0 auto;
-    line-height: 1.4;
-  }
+.plants-desc {
+  font-size: 0.875rem;
+  font-weight: normal;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  line-height: 1.4;
+}
 
-  .plants-container-box {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 10px;
-    margin:  0 10px;
-  }
+/* Grid Container */
+.plants-container-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; 
+  height: auto;
+  max-width: 360px; 
 
-  .plants-container {
-    max-width: 100%;
-    height: auto;
-    margin: auto 14px;
-  }
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0;
+}
 
-  .btn-primary {
-    width: 100%;
-    padding: 12px 0;
-  }
+/* Individual Card */
+.plants-container {
+  max-width: 171px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+
+  padding: 0;
+}
+
+/* Image inside card */
+.plants-container img {
+  max-width: 171px;
+  width: 100%;
+  display: block;
+}
+
+/* Button inside card */
+.btn-primary {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+}
 .trusted {
   display: flex;
   flex-direction: column;
@@ -555,24 +576,39 @@ nav ul li{
   margin: 0 auto;
   padding: 10px 15px;
   text-align: center;
-  margin-bottom: 0;
-      margin: 60px auto 40px; /* Reduced top/bottom margins */
+  margin-bottom: -148px;
+    
     padding: 0 16px;
     max-width: 100%;
 }
-
-.trusted-left,
-.trusted-right {
+..trusted-left{
+    margin-top: -40px;
+}
+.trusted-left
+ {
   max-width: 320px;
   width: 100%;
   margin-left: 30px;
+  margin-bottom: 0;
   padding: 0;
+  gap: 20px
+  ;
 }
 
+
+  .photoman {
+    justify-content: center;
+    align-items: center;
+    max-width: 360px;
+   
+    margin-left : -36px;
+    padding: 0;
+    margin-bottom: 0;
+  }
 .trusted-title {
   font-size: 1.5rem; 
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   margin-bottom: 15px;
 }
 
@@ -594,6 +630,11 @@ nav ul li{
 .trusted-desc li {
   font-size: inherit;
   margin-bottom: 8px; 
+}
+
+/*deals section*/
+.deals{
+    margin-bottom: 40px;
 }
 .latest-deals {
     margin: 0 auto;
@@ -645,14 +686,85 @@ nav ul li{
     width: 100% !important;
     max-width: 361px;
     height: 200px;
+    padding: 0 100px
+    ;
   }
+  /*colourfull-bunch*/
 
+  .color
+  full-bunch{
+
+    max-width: 393px;
+    height: 276px;
+    margin: 40px 0px;
+    object-fit: cover;
+
+    
+  }
+  .bunch-content{
+    max-width: 321px;
+    height: 100px;
+
+  }
+.bunch-title{
+    font-size: 20px;
+    
+}
+.bunch-bar{
+
+    max-width: 300px;
 
 }
+.btn-2{
+    max-width: 103px;
+     padding: 0 40px;
+}
+/*footer-section*/
+
+.footer{
+    max-width: 393px;
+    height: 865px;
+}
+.footer-content{
+    max-width: 393px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  .footer-container {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+     font-size: 16px;
+  }
+  .footer-desc{
+    font-size: 16px;
+  }
+
+  .footer-logo {
+    font-size: 24px;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+  }
+  .btn-2{
+    padding: 0 40px;
+  }
+
+  .footer-info,
+  .footer-info2 {
+    gap: 4px; /* Further reduced gap on mobile */
+     font-size: 16px;
+  }
+}
+
   @media screen and (max-width: 1024px) {
   .trustedbadge {
     display: none;
   }
  
 }
-
